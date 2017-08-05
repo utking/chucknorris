@@ -13,7 +13,7 @@ export default {
   name: 'chucknorris',
   data() {
     return {
-      quote: 'Wait for it...',
+      quote: '',
     };
   },
   created() {
@@ -21,6 +21,7 @@ export default {
   },
   methods: {
     fetchNext(e) {
+      this.quote = 'Wait for it...';
       if (e) {
         e.preventDefault();
       }
